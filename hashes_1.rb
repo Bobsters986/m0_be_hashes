@@ -1,30 +1,36 @@
 
-Activity:
+#Activity
 
 # In the below exercises, write code that achieves
 # the desired result. To check your work, run this
 # file by entering the following command in your Terminal: 
 # `ruby hashes_1.rb`
 
-foods = {"apples": 23, "grapes": 507, "eggs": 48}
-p zoo
+foods = {
+  apples: 23,
+  grapes: 507, 
+  eggs: 48
+}
+
 
 # Write code that prints all of the 'keys' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+
+p foods.keys
 
 # Write code that prints all of the 'values' of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values
 
 # Write code that prints the value of the second food of the foods variable 
 # you created above:
-# YOUR CODE HERE
+p foods.values[1]
 
 # Write code that adds a food to the foods hash. 
 # Then, print the updated hash:
-# YOUR CODE HERE
+ foods[:tomatoes] = 6
 
+p foods
 
 #-------------------
 # Part 2: Email
@@ -38,15 +44,22 @@ p zoo
 # value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 # Write code that prints your email hash to the terminal.
-
+email = {
+  sender: "Bobby Luly",
+  receiver: "bobbyluly@gmail.com", 
+  subject: "Important news",
+  cc: "me@me.com",
+  attachment: true
+}
+p email
 
 # Write code that prints all of the 'keys' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.keys 
 
 # Write code that prints all of the 'values' of the email hash 
 # you created above:
-# YOUR CODE HERE
+p email.values
 
 
 #-------------------
@@ -97,3 +110,27 @@ p posts[0]
 # YOU DO: Create an array of at least 3 EMAIL Hashes, using the same 
 # key-value pairs you used in your email Hash above.
 # Then, print the email Array to the Terminal.
+email = [
+  {
+    sender: "Bobby Luly",
+    receiver: "bobbyluly@gmail.com", 
+    subject: "Important news",
+    cc: "me@me.com",
+    attachment: true
+  },
+  {
+    sender: "Bobby Luly",
+    receiver: "bobbyluly@gmail.com", 
+    subject: "Important news",
+    cc: "me@me.com",
+    attachment: true
+  },
+  {
+  sender: "Bobby Luly",
+  receiver: "bobbyluly@gmail.com", 
+  subject: "Important news",
+  cc: "me@me.com",
+  attachment: true
+  }
+]
+p email
